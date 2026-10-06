@@ -1,28 +1,40 @@
-# Wonton House — Versi 1
+# Wonton House
 
 Mini website pemesanan Wonton untuk tugas Analisis & Pengujian Sistem.
 
 ## Fitur
+
 - Pilih menu Wonton
-- Input jumlah
+- Masukkan jumlah pesanan
 - Pilih level pedas
 - Pilih metode pembayaran
-- Hitung subtotal
-- Hitung diskon
-- Hitung total
+- Hitung total pesanan
 - Reset pesanan
 
 ## Teknologi
-HTML, CSS, JavaScript.
 
-## Cara menjalankan
-Buka `index.html` menggunakan browser.
+- HTML
+- CSS
+- JavaScript
 
-## Catatan penting untuk tugas
-Ini adalah VERSI 1 yang digunakan sebagai objek pengujian.
-Jangan memperbaiki `script.js` sebelum proses pengujian dan dokumentasi fault selesai.
+## Cara Menjalankan
 
-Versi awal memiliki tiga fault yang akan ditemukan dan dibuktikan melalui test case:
+Buka file `index.html` menggunakan browser.
+
+## Catatan Pengujian
+
+Program ini merupakan versi awal yang digunakan untuk proses pengujian.
+
+Ditemukan beberapa fault pada program, yaitu:
+
 1. Biaya level pedas belum masuk ke subtotal.
-2. Diskon menggunakan aturan yang tidak sesuai spesifikasi pengujian.
-3. Jumlah 0/negatif belum divalidasi.
+2. Diskon belum sesuai dengan aturan promo, yaitu lebih dari 5 porsi mendapat diskon 10%.
+3. Jumlah 0 masih dapat diproses.
+
+Fault tersebut kemudian dianalisis menggunakan metode Root Cause Analysis (RCA).
+
+## Struktur File
+
+- `index.html` → halaman utama
+- `style.css` → tampilan website
+- `script.js` → fungsi dan perhitungan program
