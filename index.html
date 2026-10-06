@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wonton House - Pemesanan Wonton</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">
+      <div class="brand-mark">W</div>
+      <div>
+        <h1>Wonton House</h1>
+        <span>Fresh • Simple • Delicious</span>
+      </div>
+    </div>
+    <div class="cart-badge">Pesanan <span id="cartCount">0</span></div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">MINI FOOD ORDERING APP</p>
+        <h2>Pesan Wonton Favoritmu</h2>
+        <p>Pilih menu, tentukan jumlah dan level pedas, lalu hitung total pesananmu.</p>
+      </div>
+      <div class="hero-icon">🥟</div>
+    </section>
+
+    <section class="content-grid">
+      <section class="card">
+        <h3>Detail Pesanan</h3>
+
+        <label for="menu">Pilih Menu</label>
+        <select id="menu">
+          <option value="10000">Wonton Original — Rp10.000</option>
+          <option value="12000">Wonton Chili Oil — Rp12.000</option>
+          <option value="15000">Wonton Cheese — Rp15.000</option>
+        </select>
+
+        <label for="qty">Jumlah</label>
+        <input id="qty" type="number" min="1" value="1" placeholder="Masukkan jumlah">
+
+        <label for="spicy">Level Pedas</label>
+        <select id="spicy">
+          <option value="0">Tidak Pedas (+Rp0)</option>
+          <option value="2000">Level 1 (+Rp2.000)</option>
+          <option value="4000">Level 2 (+Rp4.000)</option>
+          <option value="6000">Level 3 (+Rp6.000)</option>
+        </select>
+
+        <label for="payment">Metode Pembayaran</label>
+        <select id="payment">
+          <option value="Cash">Cash</option>
+          <option value="QRIS">QRIS</option>
+          <option value="Transfer Bank">Transfer Bank</option>
+        </select>
+
+        <div class="actions">
+          <button id="calculate" class="primary">Hitung Pesanan</button>
+          <button id="reset" class="secondary">Reset</button>
+        </div>
+
+        <p id="message" class="message" aria-live="polite"></p>
+      </section>
+
+      <aside class="card summary">
+        <h3>Ringkasan Pesanan</h3>
+        <div class="summary-row">
+          <span>Harga menu</span>
+          <strong id="menuPrice">Rp0</strong>
+        </div>
+        <div class="summary-row">
+          <span>Jumlah</span>
+          <strong id="summaryQty">0</strong>
+        </div>
+        <div class="summary-row">
+          <span>Tambahan pedas</span>
+          <strong id="spicyFee">Rp0</strong>
+        </div>
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong id="subtotal">Rp0</strong>
+        </div>
+        <div class="summary-row">
+          <span>Diskon</span>
+          <strong id="discount">Rp0</strong>
+        </div>
+        <div class="summary-row total-row">
+          <span>Total</span>
+          <strong id="total">Rp0</strong>
+        </div>
+        <div class="summary-row">
+          <span>Pembayaran</span>
+          <strong id="paymentSummary">-</strong>
+        </div>
+      </aside>
+    </section>
+
+    <section class="info card">
+      <h3>Informasi toko</h3>
+      <p style="margin-top: 14px; padding: 12px; border-radius: 10px; color: #8a3f18; background: #fff0d9; font-weight: 700;">🎁 Promo Spesial: Pesan lebih dari 5 porsi dan dapatkan diskon 10%.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Wonton House — Mini Project Analisis & Pengujian Sistem</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
